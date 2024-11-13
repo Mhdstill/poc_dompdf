@@ -26,7 +26,7 @@ class PdfController extends AbstractController
     }
 
     /**
-     * @Route("/convert-to-pdf", name="convert_to_pdf_form", methods={"GET"})
+     * @Route("/", name="convert_to_pdf_form", methods={"GET"})
      */
     public function showConversionForm(): Response
     {
