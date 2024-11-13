@@ -7,6 +7,19 @@
         {% block stylesheets %}{% endblock %}
     </head>
     <body class="bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between py-4">
+                <div class="text-xl font-bold text-gray-800">
+                    <a href="{{ path('convert_to_pdf_form') }}">
+                        🚀 Symfony PDF Converter
+                    </a>
+                </div>
+                <div class="text-sm text-gray-600">
+                    Powered by Symfony {{ constant('Symfony\\Component\\HttpKernel\\Kernel::VERSION') }}
+                </div>
+            </div>
+        </div>
+
         {% block body %}{% endblock %}
         {% block javascripts %}{% endblock %}
     </body>
